@@ -1,0 +1,18 @@
+{
+  "name": "angular-resource",
+  "version": "1.2.9-build.2113+sha.a0d759c",
+  "main": "./angular-resource.js",
+  "dependencies": {
+    "angular": "1.2.9-build.2113+sha.a0d759c"
+  },
+  "homepage": "https://github.com/angular/bower-angular-resource",
+  "_release": "1.2.9-build.2113+sha.a0d759c",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.2.9-build.2113+sha.a0d759c",
+    "commit": "62fd36a306dd5f64d8c7a9e2bd41dbcf9146ff83"
+  },
+  "_source": "git://github.com/angular/bower-angular-resource.git",
+  "_target": "~1.2.0",
+  "_originalSource": "angular-resource"
+}

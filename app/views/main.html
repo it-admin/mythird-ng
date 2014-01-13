@@ -1,0 +1,41 @@
+
+<pre>DEBUG: {{debug}}</pre>
+
+<div class="jumbotron" ng-init="setUsers()">
+  <h1>'Allo, 'Allo! {{title}}</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
+</div>
+
+
+<div class="row marketing">
+    <input ng-model="awesomeThing" />
+    <ul>
+      <li class="dropdown">
+        <a class="dropdown-toggle">
+          Click me to see some awsome things
+        </a>
+        <ul class="dropdown-menu">
+          <li ng-repeat="thing in awesomeThings"><a ng-click="setAwesomeThing(thing)">{{$index+1}}. {{thing}}</a></li>
+        </ul>
+      </li>
+    </ul>
+</div>
+
+
+<div class="row marketing">
+  <h4>Users</h4>
+  <p ng-repeat="user in users">
+    Name: {{user.namefirst}} {{user.namelast}}
+    <br/>
+    Gender: {{user.gender}}, Age: {{user.age}}
+  </p>
+</div>
+
+<div class="footer">
+  <p>♥ from the Yeoman team</p>
+</div>
+

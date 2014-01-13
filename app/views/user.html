@@ -1,0 +1,31 @@
+
+
+<div class="jumbotron" ng-init="setUser()">
+  <h1>{{title}}</h1>
+</div>
+
+<div class="row marketing">
+  <h4>{{user.namefirst + " " + user.namelast}}</h4>
+  <p style="color:red;font-weight:bold;">{{error}}<br/>{{errormessage}}</p>
+  <p>{{errordebug}}</p>
+
+<div class="row marketing">
+  <form novalidate ng-submit="updateUser()">
+    <input ng-model="user.namefirst" placeholder="{{inputfields.namefirst.title}}"/>
+    <br/><br/>
+    <input ng-model="user.namelast" placeholder="{{inputfields.namelast.title}}"/>
+    <br/><br/>
+    <input ng-model="user.gender" placeholder="{{inputfields.gender.title}}"/>
+    <br/><br/>
+    <input ng-model="user.age" placeholder="{{inputfields.age.title}}"/>
+    <br/><br/>
+
+    <button class="btn btn-lg btn-success" type="submit" ng-disabled="!isFormComplete()">Create New User</button>
+    <button class="btn btn-lg btn-success" type="button" ng-click="clear()">Clear</button>
+  </form>
+</div>
+
+
+<div class="footer">
+  <p>The Footer...</p>
+</div>
